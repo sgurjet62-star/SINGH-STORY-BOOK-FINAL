@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaShelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="bookmarks">
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html">Sea<span>Shelf</span></a>
+        <button class="icon-btn menu-toggle" id="menuToggle">☰</button>
+        <nav class="site-nav" id="siteNav">
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse</a>
+            <a href="genre.html">Genres</a>
+            <a class="active" href="bookmarks.html">Bookmarks</a>
+        </nav>
+        <button class="icon-btn" id="themeToggle">☾ Dark</button>
+    </div>
+</header>
+
+<main class="container page-top">
+    <div class="page-heading">
+        <h1>My Bookmarks</h1>
+        <p>Your saved stories are collected here.</p>
+    </div>
+
+    <div class="book-grid" id="bookmarksGrid"></div>
+
+    <div class="next-story">
+        <div>
+            <h3>Looking for something new?</h3>
+            <p>Explore the library to find another story.</p>
+        </div>
+        <a class="button primary" href="browse.html">Browse Stories </a>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <strong>SeaShelf</strong>
+    </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>

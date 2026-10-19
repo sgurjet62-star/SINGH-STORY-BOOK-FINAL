@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaShelf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="brand" href="index.html">Sea<span>Shelf</span></a>
+
+        <button class="icon-btn menu-toggle" id="menuToggle">☰</button>
+
+        <nav class="site-nav" id="siteNav">
+            <a class="active" href="index.html">Home</a>
+            <a href="browse.html">Browse</a>
+            <a href="genre.html">Genres</a>
+            <a href="bookmarks.html">Bookmarks</a>
+        </nav>
+
+        <button class="icon-btn" id="themeToggle">☾ Dark</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-panel">
+                <div>
+                    <h1>GURGET SINGH<br>BSIT - 21006</h1>
+                       Choose a story and enter a new world.</p>
+
+                    <div class="hero-actions">
+                        <a class="button primary" href="browse.html">
+                            Explore Stories 
+                        </a>
+                        <a class="button secondary" href="genre.html">
+                            Browse Genres
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-art">
+                    <img src="images/shadow.jpg" alt="Featured book cover">
+                    <img src="images/holy.jpeg" alt="Fantasy book cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container">
+        <div class="section-head">
+            <div>
+                <h2>Pick a Genre</h2>
+            </div>
+            <a class="text-link" href="genre.html">View all </a>
+        </div>
+
+        <div class="genre-chips" id="genreChips"></div>
+    </section>
+
+    <section class="section container">
+        <div class="section-head">
+            <div>
+                <h2>Featured Stories</h2>
+            </div>
+            <a class="text-link" href="browse.html">View all stories </a>
+        </div>
+
+        <div class="book-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="section container">
+        <div class="next-story">
+            <div>
+                <p>Press the heart button to save your favorite stories.</p>
+            </div>
+            <a class="button primary" href="bookmarks.html">
+                My Bookmarks 
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <strong>SeaShelf</strong>
+    </div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
